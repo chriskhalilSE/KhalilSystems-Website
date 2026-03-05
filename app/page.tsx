@@ -7,9 +7,9 @@ export default function HomePage() {
         </p>
 
         <h1 className="text-4xl md:text-5xl font-semibold tracking-tight">
-          <span className="text-blue-300">High reliability</span>{" "}
+          <span className="text-blue-500">High reliability</span>{" "}
           <span className="text-white">software</span>{" "}
-          <span className="text-amber-200">built for the real world.</span>
+          <span className="text-amber-400">built for the real world.</span>
         </h1>
 
         <p className="max-w-2xl text-white/75 leading-relaxed">
