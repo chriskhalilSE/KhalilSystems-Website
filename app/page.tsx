@@ -30,6 +30,24 @@ export default function HomePage() {
       </a>
     </div>
   </section>
+  <section id="work" className="mx-auto max-w-5xl px-6 py-14">
+	  <h2 className="text-xl font-semibold">Selected work</h2>
+	  <p className="mt-2 max-w-2xl text-white/70">
+		A couple of outcomes beats a long list of technologies.
+	  </p>
+
+	  <div className="mt-8 grid gap-4 md:grid-cols-2">
+		{[
+		  { title: "Broadcast graphics tooling", desc: "Latency-sensitive systems, operational reliability, live delivery workflows." },
+		  { title: "Local AI assistant (CAI)", desc: "Local LLM integration, embeddings/RAG, indexing, and CLI workflows." },
+		].map((c) => (
+		  <div key={c.title} className="rounded-2xl border border-white/10 bg-white/5 p-5">
+			<div className="font-medium">{c.title}</div>
+			<div className="mt-2 text-sm text-white/70 leading-relaxed">{c.desc}</div>
+		  </div>
+		))}
+	  </div>
+	</section>
 </main>
   );
 }
