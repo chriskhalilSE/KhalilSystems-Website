@@ -1,5 +1,14 @@
 import Link from "next/link";
 
+const NavLink = ({ href, label }: { href: string; label: string }) => (
+  <Link
+    href={href}
+    className="text-sm text-white/80 hover:text-white transition"
+  >
+    {label}
+  </Link>
+);
+
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-black/40 backdrop-blur">
@@ -8,17 +17,18 @@ export default function Navbar() {
           Khalil Systems Engineering
         </Link>
 
-        <nav className="flex items-center gap-5 text-sm text-white/80">
-          <a href="#services" className="hover:text-white transition">Services</a>
-          <a href="#work" className="hover:text-white transition">Work</a>
-          <a href="#contact" className="hover:text-white transition">Contact</a>
+        <nav className="flex items-center gap-5">
+          <NavLink href="/services" label="Services" />
+          <NavLink href="/work" label="Work" />
+          <NavLink href="/about" label="About" />
+          <NavLink href="/contact" label="Contact" />
 
-          <a
-            href="#contact"
-            className="rounded-lg border border-white/15 bg-white/5 px-3 py-1.5 text-white hover:bg-white/10 transition"
+          <Link
+            href="/contact"
+            className="rounded-lg border border-white/15 bg-white/5 px-3 py-1.5 text-sm text-white hover:bg-white/10 transition"
           >
             Get in touch
-          </a>
+          </Link>
         </nav>
       </div>
     </header>
