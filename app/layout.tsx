@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "@/components/navbar";
+import Link from "next/link";
 
 export const metadata = {
   title: "Khalil Systems Engineering",
