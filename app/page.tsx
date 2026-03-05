@@ -2,7 +2,7 @@ export default function HomePage() {
   return (
 <main className="mx-auto max-w-5xl px-6 py-16">
   <section className="space-y-6">
-    <p className="text-sm text-amber-400">
+    <p className="text-sm text-white">
       London-based software engineering and systems delivery
     </p>
 

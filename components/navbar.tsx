@@ -3,7 +3,7 @@ import Link from "next/link";
 const NavLink = ({ href, label }: { href: string; label: string }) => (
   <Link
     href={href}
-    className="text-sm text-white/80 hover:text-white transition"
+    className="text-sm text-amber-400/80 hover:text-blue transition"
   >
     {label}
   </Link>
@@ -14,7 +14,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-black/40 backdrop-blur">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <Link href="/" className="font-semibold tracking-tight text-white">
-          <span className="text-amber-400">Khalil Systems</span> Engineering
+          <span className="text-amber-400/15">Khalil Systems</span> Engineering
         </Link>
 
         <nav className="flex items-center gap-5">
