@@ -10,13 +10,19 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+	
       <body className="min-h-screen bg-black text-white">
-        <div className="pointer-events-none fixed inset-0 -z-10">
-          <div className="absolute inset-0 bg-[radial-gradient(900px_circle_at_20%_10%,rgba(255,255,255,0.10),transparent_55%)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(800px_circle_at_80%_30%,rgba(255,255,255,0.08),transparent_55%)]" />
-          <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0),rgba(0,0,0,0.92))]" />
-          <div className="absolute inset-0 opacity-30 bg-[linear-gradient(to_right,rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.06)_1px,transparent_1px)] bg-[size:64px_64px]" />
-        </div>
+		
+		<div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+		  {/* Blue system glow */}
+		  <div className="absolute -top-40 -left-40 h-[600px] w-[600px] rounded-full bg-blue-600/25 blur-[140px]" />
+		  {/* Amber intelligence glow */}
+		  <div className="absolute top-1/3 -right-40 h-[500px] w-[500px] rounded-full bg-amber-500/25 blur-[120px]" />
+		  {/* subtle deep gradient */}
+		  <div className="absolute inset-0 bg-gradient-to-b from-[#05070f] via-[#06080f] to-black" />
+		  {/* grid overlay */}
+		  <div className="absolute inset-0 opacity-20 bg-[linear-gradient(to_right,rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.06)_1px,transparent_1px)] bg-[size:60px_60px]" />
+		</div>
 
         <Navbar />
 
@@ -36,6 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </div>
             </div>
           </footer>
+		  
         </div>
       </body>
     </html>

@@ -14,7 +14,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-black/40 backdrop-blur">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <Link href="/" className="font-semibold tracking-tight text-white">
-          Khalil Systems Engineering
+          <span className="text-blue-400">Khalil Systems</span> Engineering
         </Link>
 
         <nav className="flex items-center gap-5">
