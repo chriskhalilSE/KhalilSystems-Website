@@ -14,7 +14,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-black/40 backdrop-blur">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <Link href="/" className="font-semibold tracking-tight text-white">
-          <span className="text-blue-400">Khalil Systems</span> Engineering
+          <span className="text-Amber-400">Khalil Systems Engineering</span>
         </Link>
 
         <nav className="flex items-center gap-5">
@@ -25,7 +25,7 @@ export default function Navbar() {
 
           <Link
             href="/contact"
-            className="rounded-lg border border-white/15 bg-white/5 px-3 py-1.5 text-sm text-white hover:bg-white/10 transition"
+            className="rounded-lg border border-Amber-400/15 bg-white/5 px-3 py-1.5 text-sm text-Amber-400 hover:bg-white/10 transition"
           >
             Get in touch
           </Link>
