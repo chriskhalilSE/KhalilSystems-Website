@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="mx-auto max-w-5xl px-6">
           {children}
 
-          <footer className="mt-20 border-t border-white/10 py-10 text-sm text-white/60">
+          <footer className="mt-20 border-t border-blue-600/25 py-10 text-sm text-amber-400">
             <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
               <div>© {new Date().getFullYear()} Khalil Systems Engineering</div>
               <div className="flex gap-4">
