@@ -6,7 +6,7 @@ export default function HomePage() {
       London-based software engineering and systems delivery
     </p>
 
-    <h1 className="text-4xl md:text-blue-500-5xl font-semibold tracking-tight">
+    <h1 className="text-4xl md:text-blue-500/75-5xl font-semibold tracking-tight">
       Build software that survives reality.
     </h1>
 
