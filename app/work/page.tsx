@@ -1,49 +1,57 @@
+const workItems = [
+  {
+    title: "Broadcast graphics tooling",
+    summary:
+      "Representative work in live production environments where timing matters, operator confidence matters, and failure is public.",
+    tags: ["Operational reliability", "Real time", "Tooling"],
+    tone: "panel-blue",
+  },
+  {
+    title: "Local AI assistant (CAI)",
+    summary:
+      "Local LLM integration, retrieval, and developer tooling built for privacy, speed, and practical day to day usefulness.",
+    tags: ["RAG", "Local inference", "Developer tooling"],
+    tone: "panel-amber",
+  },
+];
+
 export default function WorkPage() {
   return (
-    <main className="py-16">
-      <div className="space-y-4">
-        <p className="text-sm text-white/70">Selected work and representative outcomes.</p>
-        <h1 className="text-4xl font-semibold tracking-tight">
-          Work that <span className="text-blue-300">holds up</span> under pressure
+    <main className="page-shell">
+      <section className="space-y-5">
+        <p className="eyebrow">Selected work and representative outcomes</p>
+        <h1 className="section-title">
+          Work that <span className="text-blue-400">holds up</span> under pressure
         </h1>
-        <p className="max-w-2xl text-white/75 leading-relaxed">
-          This page is intentionally lightweight for now. It is a place for case studies as they become public.
-          The goal is to show outcomes and constraints, not a list of tools.
+        <p className="lead">
+          This page stays intentionally selective. A short set of outcome-focused examples is far
+          more useful than a bloated wall of technologies trying to peacock at strangers.
         </p>
-      </div>
+      </section>
 
-      <div className="mt-10 grid gap-4 md:grid-cols-2">
-        <div className="rounded-2xl border border-blue-400/25 bg-white/5 p-6 hover:border-blue-400/45 transition">
-          <div className="font-medium">Broadcast graphics tooling</div>
-          <div className="mt-2 text-sm text-white/70 leading-relaxed">
-            Live operations, tight timelines, and reliability requirements.
-            Focus on reducing failure modes and improving operator confidence.
-          </div>
-          <div className="mt-4 flex flex-wrap gap-2 text-xs">
-            <span className="rounded-full border border-white/15 bg-black/20 px-2 py-1 text-white/70">Operational reliability</span>
-            <span className="rounded-full border border-blue-400/20 bg-black/20 px-2 py-1 text-blue-200">Real time</span>
-            <span className="rounded-full border border-white/15 bg-black/20 px-2 py-1 text-white/70">Tooling</span>
-          </div>
-        </div>
+      <section className="mt-12 grid gap-4 md:grid-cols-2">
+        {workItems.map((item) => (
+          <article key={item.title} className={`panel p-7 ${item.tone}`}>
+            <div className="text-lg font-medium text-white">{item.title}</div>
+            <p className="mt-3 text-sm leading-7 text-white/70">{item.summary}</p>
+            <div className="mt-5 flex flex-wrap gap-2">
+              {item.tags.map((tag) => (
+                <span key={tag} className="chip">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </article>
+        ))}
+      </section>
 
-        <div className="rounded-2xl border border-amber-300/25 bg-white/5 p-6 hover:border-amber-300/45 transition">
-          <div className="font-medium">Local AI assistant (CAI)</div>
-          <div className="mt-2 text-sm text-white/70 leading-relaxed">
-            Local LLM integration, embeddings and retrieval, and CLI workflows.
-            Built for privacy, speed, and practical day to day use.
-          </div>
-          <div className="mt-4 flex flex-wrap gap-2 text-xs">
-            <span className="rounded-full border border-white/15 bg-black/20 px-2 py-1 text-white/70">RAG</span>
-            <span className="rounded-full border border-amber-300/20 bg-black/20 px-2 py-1 text-amber-200">Local inference</span>
-            <span className="rounded-full border border-white/15 bg-black/20 px-2 py-1 text-white/70">Developer tooling</span>
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-14 rounded-2xl border border-white/10 bg-white/5 p-6">
-        <div className="text-sm text-white/70">Placeholder</div>
-        <div className="mt-2 text-white">Add one case study at a time. Keep them short and outcome led.</div>
-      </div>
+      <section className="mt-12 panel p-7">
+        <div className="text-sm text-white/65">Case study guidance</div>
+        <p className="mt-3 max-w-3xl leading-8 text-white/72">
+          Add case studies one at a time. Each should explain the constraint, the intervention, and
+          the outcome. That tells a stronger story than a technology checklist ever will.
+        </p>
+      </section>
     </main>
   );
 }

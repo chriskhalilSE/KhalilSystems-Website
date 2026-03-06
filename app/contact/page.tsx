@@ -1,47 +1,56 @@
 export default function ContactPage() {
   return (
-    <main className="py-16">
-      <div className="space-y-4">
-        <p className="text-sm text-white/70">Lets talk.</p>
-        <h1 className="text-4xl font-semibold tracking-tight">
-          Get in <span className="text-amber-200">touch</span>
+    <main className="page-shell">
+      <section className="space-y-5">
+        <p className="eyebrow">Get in touch</p>
+        <h1 className="section-title">
+          Start with the problem. <span className="text-amber-300">The rest follows.</span>
         </h1>
-        <p className="max-w-2xl text-white/75 leading-relaxed">
-          A short description of what you are building and what good looks like is enough to start.
-          I will reply with next steps, timelines, and any initial risks I see.
+        <p className="lead">
+          A short note covering what you are trying to build, what is currently painful, and what a
+          good outcome looks like is enough to start a sensible conversation.
         </p>
-      </div>
+      </section>
 
-      <div className="mt-10 grid gap-4 md:grid-cols-2">
-        <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-          <div className="text-sm text-white/70">Email</div>
+      <section className="mt-12 grid gap-4 lg:grid-cols-[0.95fr_1.05fr]">
+        <div className="panel p-7">
+          <div className="text-sm text-white/65">Email</div>
           <a
-            className="mt-2 inline-block text-white hover:text-amber-300 transition"
+            className="mt-3 inline-block text-lg font-medium text-white transition hover:text-amber-300"
             href="mailto:chris@khalilsystems.co.uk"
           >
             chris@khalilsystems.co.uk
           </a>
-          <div className="mt-4 text-sm text-white/70">
-            Typical response time: within 1 business day.
+          <p className="mt-4 text-sm leading-7 text-white/70">
+            Typical response time is within one business day.
+          </p>
+        </div>
+
+        <div className="panel panel-blue p-7">
+          <div className="text-sm text-white/65">Helpful context</div>
+          <div className="mt-4 grid gap-3 md:grid-cols-3">
+            <div className="rounded-2xl border border-white/8 bg-black/20 p-4">
+              <div className="font-medium text-white">Goal</div>
+              <p className="mt-2 text-sm leading-6 text-white/70">What needs to change and why it matters.</p>
+            </div>
+            <div className="rounded-2xl border border-white/8 bg-black/20 p-4">
+              <div className="font-medium text-white">Constraints</div>
+              <p className="mt-2 text-sm leading-6 text-white/70">Deadlines, systems, budgets, and environmental realities.</p>
+            </div>
+            <div className="rounded-2xl border border-white/8 bg-black/20 p-4">
+              <div className="font-medium text-white">Engagement</div>
+              <p className="mt-2 text-sm leading-6 text-white/70">Contract, advisory, or short focused delivery sprint.</p>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div className="rounded-2xl border border-blue-400/25 bg-white/5 p-6 hover:border-blue-400/45 transition">
-          <div className="text-sm text-white/70">What to include</div>
-          <ul className="mt-3 space-y-2 text-sm text-white/70 leading-relaxed">
-            <li>Goal and constraints (deadlines, budget, environment).</li>
-            <li>Current state (what exists, what is broken).</li>
-            <li>Preferred engagement (contract, part time advisory, short sprint).</li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="mt-14 rounded-2xl border border-amber-300/20 bg-amber-500/10 p-6">
-        <div className="font-medium text-amber-100">Placeholder</div>
-        <div className="mt-2 text-sm text-white/70 leading-relaxed">
-          A simple contact form can be added here later (with spam protection), but email is the fastest path.
-        </div>
-      </div>
+      <section className="mt-12 panel panel-amber p-7">
+        <div className="text-sm text-white/65">Next step</div>
+        <p className="mt-3 max-w-3xl leading-8 text-white/72">
+          A lightweight form can be added later with spam protection. For now, direct email keeps the path simple and fast.
+        </p>
+      </section>
     </main>
   );
 }

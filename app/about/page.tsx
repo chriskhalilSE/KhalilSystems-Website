@@ -1,47 +1,59 @@
+import Link from "next/link";
+
 export default function AboutPage() {
   return (
-    <main className="py-16">
-      <div className="space-y-4">
-        <p className="text-sm text-white/70">A practical engineering shop.</p>
-        <h1 className="text-4xl font-semibold tracking-tight">
-          About <span className="text-blue-300">Khalil Systems</span>{" "}
-          <span className="text-amber-200">Engineering</span>
+    <main className="page-shell">
+      <section className="space-y-5">
+        <p className="eyebrow">A practical engineering shop</p>
+        <h1 className="section-title">
+          About <span className="text-blue-400">Khalil Systems</span>{" "}
+          <span className="text-amber-300">Engineering</span>
         </h1>
-        <p className="max-w-2xl text-white/75 leading-relaxed">
-          I build high reliability software and automation for live production and data driven systems.
-          The focus is not hype. It is predictable behaviour, clear ownership, and smooth operations.
+        <p className="lead">
+          This is positioned as a focused software engineering and systems delivery practice. The
+          emphasis is on reliability, incremental progress, and software that behaves sensibly when
+          the environment gets messy.
         </p>
-      </div>
+      </section>
 
-      <div className="mt-10 grid gap-4 md:grid-cols-2">
-        <div className="rounded-2xl border border-blue-400/25 bg-white/5 p-6 hover:border-blue-400/45 transition">
-          <div className="font-medium">How I work</div>
-          <ul className="mt-3 space-y-2 text-sm text-white/70 leading-relaxed">
-            <li>Design for clarity and maintainability, not cleverness.</li>
-            <li>Ship in small increments and validate early.</li>
-            <li>Prefer boring solutions that fail gracefully.</li>
+      <section className="mt-12 grid gap-4 md:grid-cols-2">
+        <div className="panel panel-blue p-7">
+          <div className="text-lg font-medium text-white">How the work is done</div>
+          <ul className="mt-4 space-y-3 text-sm leading-7 text-white/72">
+            <li>Prefer clear architecture and maintainability over clever little ego traps.</li>
+            <li>Break delivery into small increments so risks surface early.</li>
+            <li>Choose solutions that are understandable by future humans, including tired ones.</li>
           </ul>
         </div>
-        <div className="rounded-2xl border border-amber-300/25 bg-white/5 p-6 hover:border-amber-300/45 transition">
-          <div className="font-medium">Where this helps</div>
-          <ul className="mt-3 space-y-2 text-sm text-white/70 leading-relaxed">
-            <li>Live and operational environments with real consequences.</li>
-            <li>Legacy systems that need safe incremental upgrades.</li>
-            <li>Tooling and automation that removes manual pressure.</li>
+        <div className="panel panel-amber p-7">
+          <div className="text-lg font-medium text-white">Where that helps</div>
+          <ul className="mt-4 space-y-3 text-sm leading-7 text-white/72">
+            <li>Live and operational environments where mistakes are visible immediately.</li>
+            <li>Legacy platforms that need careful modernisation instead of bonfire transformation.</li>
+            <li>Workflow pain points that can be eased with targeted tooling and automation.</li>
           </ul>
         </div>
-      </div>
+      </section>
 
-      <div className="mt-14 rounded-2xl border border-white/10 bg-white/5 p-6">
-        <div className="text-sm text-white/70">Next steps</div>
-        <div className="mt-2 text-white">If you have a problem that needs calm, reliable delivery, reach out.</div>
-        <a
-          href="/contact"
-          className="mt-4 inline-flex rounded-lg bg-amber-500 px-4 py-2 font-medium text-black hover:bg-amber-400 transition shadow-glowAmber"
-        >
-          Contact
-        </a>
-      </div>
+      <section className="mt-12 panel p-7">
+        <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-end">
+          <div>
+            <p className="eyebrow text-amber-200/80">Working style</p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white">Professional, direct, and operationally aware.</h2>
+            <p className="mt-4 max-w-3xl leading-8 text-white/72">
+              The goal is not performative consultancy theatre. It is to understand the constraints,
+              make sensible technical decisions, and deliver software that improves the day to day
+              reality for the people using it.
+            </p>
+          </div>
+          <Link
+            href="/contact"
+            className="inline-flex rounded-full bg-amber-400 px-5 py-3 font-medium text-black transition hover:bg-amber-300 shadow-glowAmber"
+          >
+            Contact
+          </Link>
+        </div>
+      </section>
     </main>
   );
 }
