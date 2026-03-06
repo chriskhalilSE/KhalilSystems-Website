@@ -25,6 +25,54 @@ body {
   outline-offset: 3px;
 }
 
+@keyframes driftX {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(24px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes driftY {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(18px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseSoft {
+  0% {
+    opacity: 0.18;
+  }
+  50% {
+    opacity: 0.28;
+  }
+  100% {
+    opacity: 0.18;
+  }
+}
+
+.bg-drift-x {
+  animation: driftX 18s ease-in-out infinite;
+}
+
+.bg-drift-y {
+  animation: driftY 24s ease-in-out infinite;
+}
+
+.bg-pulse-soft {
+  animation: pulseSoft 10s ease-in-out infinite;
+}
+
 @layer components {
   .page-shell {
     @apply py-16 md:py-20;
