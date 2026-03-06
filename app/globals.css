@@ -39,7 +39,7 @@ body {
   }
 
   .lead {
-    @apply max-w-3xl text-base leading-8 text-white/72 md:text-lg;
+    @apply max-w-3xl text-base leading-8 text-white/70 md:text-lg;
   }
 
   .panel {

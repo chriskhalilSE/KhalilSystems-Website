@@ -98,7 +98,7 @@ export default function HomePage() {
           <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white md:text-3xl">
             Calm delivery beats theatrical complexity.
           </h2>
-          <p className="mt-4 max-w-2xl leading-8 text-white/72">
+          <p className="mt-4 max-w-2xl leading-8 text-white/70">
             The approach is intentionally boring in the best possible way: define the goal,
             reduce ambiguity, ship in sensible increments, and make failure states visible before
             they become expensive surprises.

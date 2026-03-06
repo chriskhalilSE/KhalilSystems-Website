@@ -47,7 +47,7 @@ export default function ContactPage() {
 
       <section className="mt-12 panel panel-amber p-7">
         <div className="text-sm text-white/65">Next step</div>
-        <p className="mt-3 max-w-3xl leading-8 text-white/72">
+        <p className="mt-3 max-w-3xl leading-8 text-white/70">
           A lightweight form can be added later with spam protection. For now, direct email keeps the path simple and fast.
         </p>
       </section>

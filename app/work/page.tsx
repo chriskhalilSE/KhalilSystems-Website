@@ -47,7 +47,7 @@ export default function WorkPage() {
 
       <section className="mt-12 panel p-7">
         <div className="text-sm text-white/65">Case study guidance</div>
-        <p className="mt-3 max-w-3xl leading-8 text-white/72">
+        <p className="mt-3 max-w-3xl leading-8 text-white/70">
           Add case studies one at a time. Each should explain the constraint, the intervention, and
           the outcome. That tells a stronger story than a technology checklist ever will.
         </p>

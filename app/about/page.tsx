@@ -19,7 +19,7 @@ export default function AboutPage() {
       <section className="mt-12 grid gap-4 md:grid-cols-2">
         <div className="panel panel-blue p-7">
           <div className="text-lg font-medium text-white">How the work is done</div>
-          <ul className="mt-4 space-y-3 text-sm leading-7 text-white/72">
+          <ul className="mt-4 space-y-3 text-sm leading-7 text-white/70">
             <li>Prefer clear architecture and maintainability over clever little ego traps.</li>
             <li>Break delivery into small increments so risks surface early.</li>
             <li>Choose solutions that are understandable by future humans, including tired ones.</li>
@@ -27,7 +27,7 @@ export default function AboutPage() {
         </div>
         <div className="panel panel-amber p-7">
           <div className="text-lg font-medium text-white">Where that helps</div>
-          <ul className="mt-4 space-y-3 text-sm leading-7 text-white/72">
+          <ul className="mt-4 space-y-3 text-sm leading-7 text-white/70">
             <li>Live and operational environments where mistakes are visible immediately.</li>
             <li>Legacy platforms that need careful modernisation instead of bonfire transformation.</li>
             <li>Workflow pain points that can be eased with targeted tooling and automation.</li>
@@ -40,7 +40,7 @@ export default function AboutPage() {
           <div>
             <p className="eyebrow text-amber-200/80">Working style</p>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white">Professional, direct, and operationally aware.</h2>
-            <p className="mt-4 max-w-3xl leading-8 text-white/72">
+            <p className="mt-4 max-w-3xl leading-8 text-white/70">
               The goal is not performative consultancy theatre. It is to understand the constraints,
               make sensible technical decisions, and deliver software that improves the day to day
               reality for the people using it.
