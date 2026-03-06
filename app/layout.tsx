@@ -26,10 +26,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 		  <div className="absolute inset-0 opacity-[0.10] bg-[linear-gradient(to_right,rgba(255,255,255,0.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.07)_1px,transparent_1px)] bg-[size:64px_64px]" />
 
 		  {/* Slow drifting vertical data lines */}
-		  <div className="absolute inset-0 bg-drift-x opacity-[0.2] bg-[linear-gradient(to_right,transparent_0%,rgba(96,165,250,0.28)_48%,transparent_52%)] bg-[size:220px_220px]" />
+		  <div className="absolute inset-0 bg-drift-x opacity-[0.1] bg-[linear-gradient(to_right,transparent_0%,rgba(96,165,250,0.28)_48%,transparent_52%)] bg-[size:220px_220px]" />
 
 		  {/* Slow drifting horizontal signal lines */}
-		  <div className="absolute inset-0 bg-drift-y opacity-[0.2] bg-[linear-gradient(to_bottom,transparent_0%,rgba(245,158,11,0.30)_48%,transparent_52%)] bg-[size:260px_260px]" />
+		  <div className="absolute inset-0 bg-drift-y opacity-[0.1] bg-[linear-gradient(to_bottom,transparent_0%,rgba(245,158,11,0.30)_48%,transparent_52%)] bg-[size:260px_260px]" />
 
 		  {/* Soft pulse wash */}
 		  <div className="absolute inset-0 bg-pulse-soft bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.08),transparent_45%),radial-gradient(circle_at_70%_35%,rgba(245,158,11,0.07),transparent_35%)]" />
