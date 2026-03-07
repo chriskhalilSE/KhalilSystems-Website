@@ -161,7 +161,8 @@ export default function HomePage() {
           </p>
         </div>
       </section>
-	  <div className="panel panel-amber p-7">
+	  
+	  <div className="panel panel-amber p-5">
 		  <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white md:text-3xl">
 			Core experience and expertise.
 		  </h2>
@@ -173,6 +174,7 @@ export default function HomePage() {
 			))}
 		  </section>
 	  </div>
+	  
     </main>
   );
 }
