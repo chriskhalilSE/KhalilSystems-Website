@@ -161,10 +161,10 @@ export default function HomePage() {
           </p>
         </div>
       </section>
+	  <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white md:text-3xl">
+		Core experience and expertise.
+	  </h2>
 	  <section className="mt-14 grid gap-4 md:grid-cols-3">
-	      <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white md:text-3xl">
-            Calm delivery beats theatrical complexity.
-          </h2>
         {pillars2.map((card) => (
           <div key={card.title} className={`panel p-6 transition hover:-translate-y-0.5 ${card.tone}`}>
             <p className="mt-3 text-sm leading-7 text-white/70">{card.desc}</p>
