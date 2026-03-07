@@ -20,48 +20,48 @@ const pillars = [
   
 const pillars2 = [
   {
-    title: "Real-time data processing and event-driven systems",
-    desc: "",
+    desc: "Real-time data processing and event-driven systems",
+    title: "",
     tone: "panel-blue",
   },  
   {
-    title: "Low-latency system design and performance optimisation",
-    desc: "",
+    desc: "Low-latency system design and performance optimisation",
+    title: "",
     tone: "",
   },  
   {
-    title: "API development and data integration (REST, JSON)",
-    desc: "",
+    desc: "API development and data integration (REST, JSON)",
+    title: "",
     tone: "panel-amber",
   },
   {
-    title: ".NET ecosystem (VB.NET, C# / .NET Core)",
-    desc: "",
+    desc: ".NET ecosystem (VB.NET, C# / .NET Core)",
+    title: "",
     tone: "panel-blue",
   },
   {
-    title: "SQL and high-frequency data handling",
-    desc: "",
+    desc: "SQL and high-frequency data handling",
+    title: "",
     tone: "",
   },
   {
-    title: "Complex system debugging and fault isolation",
-    desc: "",
+    desc: "Complex system debugging and fault isolation",
+    title: "",
     tone: "panel-amber",
   },
   {
-    title: "Data transformation and visualisation pipelines",
-    desc: "",
+    desc: "Data transformation and visualisation pipelines",
+    title: "",
     tone: "panel-blue",
   },
   {
-    title: "Production reliability and failure handling",
-    desc: "",
+    desc: "Production reliability and failure handling",
+    title: "",
     tone: "",
   },
   {
-    title: "Asynchronous processing and multi-threaded system design",
-    desc: "",
+    desc: "Asynchronous processing and multi-threaded system design",
+    title: "",
     tone: "panel-amber",
   },  
 ];
@@ -162,9 +162,11 @@ export default function HomePage() {
         </div>
       </section>
 	  <section className="mt-14 grid gap-4 md:grid-cols-3">
+	      <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white md:text-3xl">
+            Calm delivery beats theatrical complexity.
+          </h2>
         {pillars2.map((card) => (
           <div key={card.title} className={`panel p-6 transition hover:-translate-y-0.5 ${card.tone}`}>
-            <div className="text-lg font-medium text-white">{card.title}</div>
             <p className="mt-3 text-sm leading-7 text-white/70">{card.desc}</p>
           </div>
         ))}
