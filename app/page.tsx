@@ -162,10 +162,10 @@ export default function HomePage() {
         </div>
       </section>
 	  <section>
-		  <h1 className="mt-3 text-lg font-semibold text-white p-10">
+		  <h2 className="mt-3 text-2xl font-semibold text-white md:text-3xl">
 			Core experience and expertise.
-		  </h1>
-		  <section className="mt-14 grid gap-1 md:grid-cols-3">
+		  </h2>
+		  <section className="mt-14 grid gap-1 tracking-tight md:grid-cols-3">
 			{pillars2.map((card) => (
 			  <div key={card.title} className={`panel p-6 transition hover:-translate-y-0.5 ${card.tone}`}>
 				<p className="mt-3 text-m leading-7 text-white/70">{card.desc}</p>
