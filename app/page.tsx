@@ -29,8 +29,7 @@ export default function HomePage() {
     <main className="page-shell">
       <section className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
         <div className="space-y-6">
-          <p className="eyebrow">London based software engineering and systems delivery</p>
-		  <p className="eyebrow">Independent software engineer delivering practical, reliable systems</p>
+		  <p className="eyebrow">London based independent software engineer delivering practical, reliable systems</p>
           <div className="space-y-4">
             <h1 className="section-title max-w-4xl text-4xl md:text-6xl">
               <span className="text-white">Professional software and systems work</span>{" "}
