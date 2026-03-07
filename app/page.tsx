@@ -16,6 +16,9 @@ const pillars = [
     desc: "Focused internal tools that remove manual effort, lower failure rates, and calm the operational chaos goblin.",
     tone: "panel-amber",
   },
+  ]:
+  
+const pillars2 = [
   {
     title: "Real-time data processing and event-driven systems",
     desc: "",
@@ -157,6 +160,14 @@ export default function HomePage() {
             and technical clean-up where a steady hand matters more than buzzword confetti.
           </p>
         </div>
+      </section>
+	  <section className="mt-14 grid gap-4 md:grid-cols-3">
+        {pillars2.map((card) => (
+          <div key={card.title} className={`panel p-6 transition hover:-translate-y-0.5 ${card.tone}`}>
+            <div className="text-lg font-medium text-white">{card.title}</div>
+            <p className="mt-3 text-sm leading-7 text-white/70">{card.desc}</p>
+          </div>
+        ))}
       </section>
     </main>
   );
