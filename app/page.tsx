@@ -19,9 +19,15 @@ const pillars = [
 ];
 
 const outcomes = [
-  "Operational reliability in live and time-sensitive environments",
-  "Incremental modernisation without blowing up what already works",
-  "Calmer workflows with fewer manual steps and better visibility",
+	"Real-time data processing and event-driven systems",
+	"Low-latency system design and performance optimisation",
+	"API development and data integration (REST, JSON)",
+	".NET ecosystem (VB.NET, C# / .NET Core)",
+	"SQL and high-frequency data handling",
+	"Complex system debugging and fault isolation",
+	"Data transformation and visualisation pipelines",
+	"Production reliability and failure handling",
+	"Asynchronous processing and multi-threaded system design"
 ];
 
 export default function HomePage() {
@@ -66,7 +72,7 @@ export default function HomePage() {
 
         <div className="panel panel-blue p-6 lg:p-7">
           <div className="flex items-center justify-between text-sm text-white/65">
-            <span>What clients usually need</span>
+            <span>Core Expertise</span>
             <span className="chip border-amber-300/20 text-amber-200">Outcome led</span>
           </div>
           <div className="mt-5 space-y-4">
