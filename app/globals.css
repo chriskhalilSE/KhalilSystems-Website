@@ -30,7 +30,7 @@ body {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(24px);
+    transform: translateX(18px);
   }
   100% {
     transform: translateX(0);
@@ -42,7 +42,7 @@ body {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(18px);
+    transform: translateY(14px);
   }
   100% {
     transform: translateY(0);
@@ -51,18 +51,18 @@ body {
 
 @keyframes pulseSoft {
   0% {
-    opacity: 0.18;
+    opacity: 0.14;
   }
   50% {
-    opacity: 0.28;
+    opacity: 0.2;
   }
   100% {
-    opacity: 0.18;
+    opacity: 0.14;
   }
 }
 
 .bg-drift-x {
-  animation: driftX 18s ease-in-out infinite;
+  animation: driftX 20s ease-in-out infinite;
 }
 
 .bg-drift-y {
@@ -70,7 +70,7 @@ body {
 }
 
 .bg-pulse-soft {
-  animation: pulseSoft 10s ease-in-out infinite;
+  animation: pulseSoft 12s ease-in-out infinite;
 }
 
 @layer components {
@@ -95,14 +95,38 @@ body {
   }
 
   .panel-blue {
-    @apply border-blue-400/20;
+    @apply border-blue-400/20 bg-blue-400/[0.03];
   }
 
   .panel-amber {
-    @apply border-amber-300/20;
+    @apply border-amber-300/20 bg-amber-300/[0.03];
   }
 
   .chip {
     @apply rounded-full border border-white/10 bg-black/20 px-3 py-1 text-xs text-white/70;
+  }
+
+  .btn-primary {
+    @apply rounded-full bg-amber-400 px-5 py-3 font-medium text-black transition hover:bg-amber-300 shadow-[0_0_30px_rgba(251,191,36,0.14)];
+  }
+
+  .btn-secondary {
+    @apply rounded-full border border-blue-400/25 bg-white/5 px-5 py-3 text-white transition hover:border-blue-300/[0.45] hover:bg-white/10 shadow-[0_0_30px_rgba(96,165,250,0.12)];
+  }
+
+  .btn-tertiary {
+    @apply rounded-full border border-white/[0.12] bg-black/20 px-5 py-3 text-white/[0.90] transition hover:bg-white/10 hover:text-white;
+  }
+
+  .feature-row {
+    @apply rounded-2xl border border-white/10 bg-black/[0.18] px-4 py-3 text-sm leading-7 text-white/[0.72];
+  }
+
+  .feature-row-blue {
+    @apply border-blue-400/20 bg-blue-400/[0.05];
+  }
+
+  .feature-row-amber {
+    @apply border-amber-300/20 bg-amber-300/[0.05];
   }
 }

@@ -1,78 +1,71 @@
+import PageHeader from "@/components/page-header";
+
 const services = [
   {
     title: "Broadcast graphics systems",
     desc: "Tooling and workflow support for live production environments where timing, clarity, and recovery paths matter.",
-    accent: "panel-blue",
+    tone: "panel-blue",
   },
   {
     title: "Automation and workflow engineering",
     desc: "Reduce repetitive manual work, cut operator error, and remove avoidable friction from operational processes.",
-    accent: "panel-amber",
+    tone: "",
   },
   {
     title: "Legacy modernisation",
     desc: "Upgrade incrementally and safely so the business keeps moving while the software gets saner.",
-    accent: "",
+    tone: "panel-amber",
   },
   {
     title: "Real-time data integration",
     desc: "Ingest, transform, validate, and deliver fast-moving data without introducing chaos downstream.",
-    accent: "panel-blue",
+    tone: "panel-blue",
   },
   {
     title: "APIs and backend services",
     desc: "C# and .NET service work focused on resilience, maintainability, and boundaries that make sense.",
-    accent: "",
+    tone: "",
   },
   {
     title: "Operational hardening",
-    desc: "Logging, observability, runbooks, and guardrails so systems fail more gracefully when reality does what reality does.",
-    accent: "panel-amber",
+    desc: "Logging, observability, runbooks, and guardrails so systems fail more gracefully when reality inevitably does reality things.",
+    tone: "panel-amber",
   },
+];
+
+const process = [
+  ["Discovery", "Clarify the real goal, constraints, failure modes, and success criteria before writing a pile of optimistic code."],
+  ["Delivery", "Build in increments, validate early, and keep changes understandable so the project stays steerable."],
+  ["Hardening", "Add observability, operational polish, and sensible fallbacks so the result holds up beyond the demo."],
 ];
 
 export default function ServicesPage() {
   return (
     <main className="page-shell">
-      <section className="space-y-5">
-        <p className="eyebrow">Clear offerings, outcome led</p>
-        <h1 className="section-title">
-          Services with <span className="text-blue-400">reliability</span> built in
-        </h1>
-        <p className="lead">
-          The service mix is designed around practical delivery: build what matters, reduce risk,
-          and make software easier to operate when deadlines and edge cases start doing their usual
-          little dance.
-        </p>
-      </section>
+      <PageHeader
+        eyebrow="Clear offerings, outcome led"
+        title="Services with reliability built in"
+        intro="The service mix is designed around practical delivery: build what matters, reduce risk, and make software easier to operate when deadlines and edge cases start doing their usual little dance."
+      />
 
-      <section className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+      <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {services.map((service) => (
-          <div key={service.title} className={`panel p-6 transition hover:-translate-y-0.5 ${service.accent}`}>
-            <div className="text-lg font-medium text-white">{service.title}</div>
+          <div key={service.title} className={`panel p-6 ${service.tone}`}>
+            <h2 className="text-lg font-medium text-white">{service.title}</h2>
             <p className="mt-3 text-sm leading-7 text-white/70">{service.desc}</p>
           </div>
         ))}
       </section>
 
-      <section className="mt-14 grid gap-4 lg:grid-cols-3">
-        <div className="panel panel-blue p-6">
-          <div className="text-lg font-medium text-white">Discovery</div>
-          <p className="mt-3 text-sm leading-7 text-white/70">
-            Clarify the real goal, constraints, failure modes, and success criteria before writing a pile of optimistic code.
-          </p>
-        </div>
-        <div className="panel p-6">
-          <div className="text-lg font-medium text-white">Delivery</div>
-          <p className="mt-3 text-sm leading-7 text-white/70">
-            Build in increments, validate early, and keep changes understandable so the project stays steerable.
-          </p>
-        </div>
-        <div className="panel panel-amber p-6">
-          <div className="text-lg font-medium text-white">Hardening</div>
-          <p className="mt-3 text-sm leading-7 text-white/70">
-            Add observability, operational polish, and sensible fallbacks so the result holds up beyond the demo.
-          </p>
+      <section className="mt-16 panel p-6 md:p-7">
+        <p className="eyebrow text-amber-200/80">How engagements usually move</p>
+        <div className="mt-6 grid gap-4 md:grid-cols-3">
+          {process.map(([title, desc], index) => (
+            <div key={title} className={`rounded-2xl border p-5 ${index === 0 ? "border-blue-400/20 bg-blue-400/[0.05]" : index === 2 ? "border-amber-300/20 bg-amber-300/[0.05]" : "border-white/10 bg-white/[0.03]"}`}>
+              <div className="text-sm font-medium uppercase tracking-[0.18em] text-white/[0.60]">{title}</div>
+              <p className="mt-3 text-sm leading-7 text-white/[0.72]">{desc}</p>
+            </div>
+          ))}
         </div>
       </section>
     </main>
