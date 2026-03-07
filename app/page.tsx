@@ -162,7 +162,7 @@ export default function HomePage() {
         </div>
       </section>
 	  <section>
-		  <h1 className="mt-3 text-2xl font-semibold text-white">
+		  <h1 className="mt-3 text-2xl font-semibold text-white p-10">
 			Core experience and expertise.
 		  </h1>
 		  <section className="mt-14 grid gap-4 md:grid-cols-3">
