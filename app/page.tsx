@@ -16,18 +16,57 @@ const pillars = [
     desc: "Focused internal tools that remove manual effort, lower failure rates, and calm the operational chaos goblin.",
     tone: "panel-amber",
   },
+  {
+    title: "Real-time data processing and event-driven systems",
+    desc: "",
+    tone: "panel-blue",
+  },  
+  {
+    title: "Low-latency system design and performance optimisation",
+    desc: "",
+    tone: "",
+  },  
+  {
+    title: "API development and data integration (REST, JSON)",
+    desc: "",
+    tone: "panel-amber",
+  },
+  {
+    title: ".NET ecosystem (VB.NET, C# / .NET Core)",
+    desc: "",
+    tone: "panel-blue",
+  },
+  {
+    title: "SQL and high-frequency data handling",
+    desc: "",
+    tone: "",
+  },
+  {
+    title: "Complex system debugging and fault isolation",
+    desc: "",
+    tone: "panel-amber",
+  },
+  {
+    title: "Data transformation and visualisation pipelines",
+    desc: "",
+    tone: "panel-blue",
+  },
+  {
+    title: "Production reliability and failure handling",
+    desc: "",
+    tone: "",
+  },
+  {
+    title: "Asynchronous processing and multi-threaded system design",
+    desc: "",
+    tone: "panel-amber",
+  },  
 ];
 
 const outcomes = [
-	"Real-time data processing and event-driven systems",
-	"Low-latency system design and performance optimisation",
-	"API development and data integration (REST, JSON)",
-	".NET ecosystem (VB.NET, C# / .NET Core)",
-	"SQL and high-frequency data handling",
-	"Complex system debugging and fault isolation",
-	"Data transformation and visualisation pipelines",
-	"Production reliability and failure handling",
-	"Asynchronous processing and multi-threaded system design"
+  "Operational reliability in live and time-sensitive environments",
+  "Incremental modernisation without blowing up what already works",
+  "Calmer workflows with fewer manual steps and better visibility",
 ];
 
 export default function HomePage() {
@@ -72,7 +111,7 @@ export default function HomePage() {
 
         <div className="panel panel-blue p-6 lg:p-7">
           <div className="flex items-center justify-between text-sm text-white/65">
-            <span>Core Expertise</span>
+            <span>What clients usually need</span>
             <span className="chip border-amber-300/20 text-amber-200">Outcome led</span>
           </div>
           <div className="mt-5 space-y-4">
