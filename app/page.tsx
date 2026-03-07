@@ -163,14 +163,14 @@ export default function HomePage() {
       </section>
 	  <h1 className="mt-3 text-2xl font-semibold text-white">
 		Core experience and expertise.
-	  </h1>
-	  <section className="mt-14 grid gap-4 md:grid-cols-3">
-        {pillars2.map((card) => (
-          <div key={card.title} className={`panel p-6 transition hover:-translate-y-0.5 ${card.tone}`}>
-            <p className="mt-3 text-sm leading-7 text-white/70">{card.desc}</p>
-          </div>
-        ))}
-      </section>
-    </main>
+		  <section className="mt-14 grid gap-4 md:grid-cols-3">
+			{pillars2.map((card) => (
+			  <div key={card.title} className={`panel p-6 transition hover:-translate-y-0.5 ${card.tone}`}>
+				<p className="mt-3 text-m leading-7 text-white/70">{card.desc}</p>
+			  </div>
+			))}
+		  </section>
+      </h1>
+	</main>
   );
 }
