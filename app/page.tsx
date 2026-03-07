@@ -16,7 +16,7 @@ const pillars = [
     desc: "Focused internal tools that remove manual effort, lower failure rates, and calm the operational chaos goblin.",
     tone: "panel-amber",
   },
-  ]:
+];
   
 const pillars2 = [
   {
