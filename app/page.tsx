@@ -161,8 +161,8 @@ export default function HomePage() {
           </p>
         </div>
       </section>
-	  <section>
-		  <h2 className="mt-3 text-2xl font-semibold text-white md:text-3xl">
+	  <div className="panel panel-amber p-7">
+		  <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white md:text-3xl">
 			Core experience and expertise.
 		  </h2>
 		  <section className="mt-14 grid gap-1 tracking-tight md:grid-cols-3">
@@ -172,7 +172,7 @@ export default function HomePage() {
 			  </div>
 			))}
 		  </section>
-	  </section>
+	  </div>
     </main>
   );
 }
