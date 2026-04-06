@@ -77,33 +77,46 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mt-8 panel p-6 md:p-7">
-        <p className="eyebrow text-blue-200/80">Selected broadcast and sports delivery context</p>
-        <p className="eyebrow text-amber-200/80">Broadcast Partners</p>
-		<div className="mt-4 flex flex-wrap gap-2">
-          {broadcasters.map((client, index) => (
-            <span key={client} className={`chip ${index % 2 === 0 ? "border-blue-400/20 text-blue-100" : "border-amber-300/20 text-amber-100"}`}>
-              {client}
-            </span>
-          ))}		  
-        </div>
-		<p className="eyebrow text-amber-200/80">Major Competitions</p>
-		<div className="mt-4 flex flex-wrap gap-2">
-		  {competitions.map((client, index) => (
-            <span key={client} className={`chip ${index % 2 === 0 ? "border-blue-400/20 text-blue-100" : "border-amber-300/20 text-amber-100"}`}>
-              {client}
-            </span>
-          ))}		
+	<section className="mt-10 panel p-6 md:p-8">
+	  <p className="eyebrow text-blue-200/80 mb-6">
+		Selected Broadcast & Sports Delivery Context
+	  </p>
+
+	  <div className="space-y-6">
+		<div className="grid gap-3 md:grid-cols-[220px_1fr] md:items-start">
+		  <p className="eyebrow text-amber-200/80">Broadcast Partners</p>
+		  <div className="flex flex-wrap gap-2.5">
+			{broadcasters.map((item) => (
+			  <span key={item} className="chip border-blue-400/20 text-blue-100">
+				{item}
+			  </span>
+			))}
+		  </div>
 		</div>
-		<p className="eyebrow text-amber-200/80">Governing Bodies & Organisations</p>
-		<div className="mt-4 flex flex-wrap gap-2">
-		  {organisations.map((client, index) => (
-            <span key={client} className={`chip ${index % 2 === 0 ? "border-blue-400/20 text-blue-100" : "border-amber-300/20 text-amber-100"}`}>
-              {client}
-            </span>
-          ))}		
+
+		<div className="border-t border-white/10 pt-6 grid gap-3 md:grid-cols-[220px_1fr] md:items-start">
+		  <p className="eyebrow text-amber-200/80">Major Competitions</p>
+		  <div className="flex flex-wrap gap-2.5">
+			{competitions.map((item) => (
+			  <span key={item} className="chip border-amber-300/20 text-amber-100">
+				{item}
+			  </span>
+			))}
+		  </div>
 		</div>
-      </section>
+
+		<div className="border-t border-white/10 pt-6 grid gap-3 md:grid-cols-[220px_1fr] md:items-start">
+		  <p className="eyebrow text-amber-200/80">Governing Bodies & Organisations</p>
+		  <div className="flex flex-wrap gap-2.5">
+			{organisations.map((item) => (
+			  <span key={item} className="chip border-blue-400/20 text-blue-100">
+				{item}
+			  </span>
+			))}
+		  </div>
+		</div>
+	  </div>
+	</section>
 
       <section className="mt-14 grid gap-4 md:grid-cols-3">
         {focusAreas.map((card) => (
