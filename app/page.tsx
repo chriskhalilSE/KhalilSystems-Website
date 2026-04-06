@@ -28,7 +28,7 @@ const proofPoints = [
 ];
 
 const broadcasters = ["Sky Sports", "BBC Sport", "ITV Sport", "TNT Sports", "CBS", "FOX Sports", "ESPN", "SuperSport", "Star Sports", "Nine Network"];
-const competitions = ["Premier League", "UEFA Champions League", "FIFA World Cup", "ICC Cricket World Cup", "Six Nations", "Rugby World Cup", "IPL", "Asia Cup", "WTA Tour"];
+const competitions = ["Premier League", "UEFA Champions League", "FIFA World Cup", "ICC Cricket World Cup", "Six Nations", "Rugby World Cup", "IPL", "Asia Cup", "WTA Tour", "NFL", "MLR"];
 const organisations = ["FIFA", "UEFA", "ICC", "World Rugby", "The FA", "ECB", "BCCI", "AFC", "ITF", "ATP", "Cricket Australia"];
 
 export default function HomePage() {
@@ -80,6 +80,7 @@ export default function HomePage() {
       <section className="mt-8 panel p-6 md:p-7">
         <p className="eyebrow text-amber-200/80">Selected broadcast and sports delivery context</p>
         <div className="mt-4 flex flex-wrap gap-2">
+		  <p className="eyebrow text-amber-200/80">Broadcast Partners</p>
           {broadcasters.map((client, index) => (
             <span key={client} className={`chip ${index % 2 === 0 ? "border-blue-400/20 text-blue-100" : "border-amber-300/20 text-amber-100"}`}>
               {client}
@@ -87,14 +88,16 @@ export default function HomePage() {
           ))}		  
         </div>
 		<div className="mt-4 flex flex-wrap gap-2">
-          {competitions.map((client, index) => (
+          <p className="eyebrow text-amber-200/80">Major Competitions</p>
+		  {competitions.map((client, index) => (
             <span key={client} className={`chip ${index % 2 === 0 ? "border-blue-400/20 text-blue-100" : "border-amber-300/20 text-amber-100"}`}>
               {client}
             </span>
           ))}		
 		</div>
 		<div className="mt-4 flex flex-wrap gap-2">
-          {organisations.map((client, index) => (
+          <p className="eyebrow text-amber-200/80">Governing Bodies & Organisations</p>
+		  {organisations.map((client, index) => (
             <span key={client} className={`chip ${index % 2 === 0 ? "border-blue-400/20 text-blue-100" : "border-amber-300/20 text-amber-100"}`}>
               {client}
             </span>
