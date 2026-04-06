@@ -78,25 +78,25 @@ export default function HomePage() {
       </section>
 
       <section className="mt-8 panel p-6 md:p-7">
-        <p className="eyebrow text-amber-200/80">Selected broadcast and sports delivery context</p>
-        <div className="mt-4 flex flex-wrap gap-2">
-		  <p className="eyebrow text-amber-200/80">Broadcast Partners</p>
+        <p className="eyebrow text-blue-200/80">Selected broadcast and sports delivery context</p>
+        <p className="eyebrow text-amber-200/80">Broadcast Partners</p>
+		<div className="mt-4 flex flex-wrap gap-2">
           {broadcasters.map((client, index) => (
             <span key={client} className={`chip ${index % 2 === 0 ? "border-blue-400/20 text-blue-100" : "border-amber-300/20 text-amber-100"}`}>
               {client}
             </span>
           ))}		  
         </div>
+		<p className="eyebrow text-amber-200/80">Major Competitions</p>
 		<div className="mt-4 flex flex-wrap gap-2">
-          <p className="eyebrow text-amber-200/80">Major Competitions</p>
 		  {competitions.map((client, index) => (
             <span key={client} className={`chip ${index % 2 === 0 ? "border-blue-400/20 text-blue-100" : "border-amber-300/20 text-amber-100"}`}>
               {client}
             </span>
           ))}		
 		</div>
+		<p className="eyebrow text-amber-200/80">Governing Bodies & Organisations</p>
 		<div className="mt-4 flex flex-wrap gap-2">
-          <p className="eyebrow text-amber-200/80">Governing Bodies & Organisations</p>
 		  {organisations.map((client, index) => (
             <span key={client} className={`chip ${index % 2 === 0 ? "border-blue-400/20 text-blue-100" : "border-amber-300/20 text-amber-100"}`}>
               {client}
