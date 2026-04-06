@@ -27,7 +27,8 @@ const proofPoints = [
   "Data transformation pipelines that stay maintainable under pressure",
 ];
 
-const clientStrip = ["Sky Sports", "TNT Sports", "FIFA", "UEFA", "ICC", "World Rugby"];
+const clientStrip = ["Sky Sports", "TNT Sports", "CBS", "BBC", "FOX", "AMAZON PRIME", "FIFA", "UEFA", "ICC", "World Rugby"];
+const clientStrip2 = ["Premier League", "UEFA Champions League", "MLS", "NFL", "Six Nations", "Rugby World Cup", "ICC Cricket World Cup", "100 Cricket"];
 
 export default function HomePage() {
   return (
@@ -83,6 +84,11 @@ export default function HomePage() {
               {client}
             </span>
           ))}
+          {clientStrip2.map((client, index) => (
+            <span key={client} className={`chip ${index % 2 === 0 ? "border-blue-400/20 text-blue-100" : "border-amber-300/20 text-amber-100"}`}>
+              {client}
+            </span>
+          ))}		  
         </div>
       </section>
 
