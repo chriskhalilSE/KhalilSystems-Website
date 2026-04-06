@@ -27,8 +27,9 @@ const proofPoints = [
   "Data transformation pipelines that stay maintainable under pressure",
 ];
 
-const clientStrip = ["Sky Sports", "TNT Sports", "CBS", "BBC", "FOX", "AMAZON PRIME", "FIFA", "UEFA", "ICC", "World Rugby"];
-const clientStrip2 = ["Premier League", "UEFA Champions League", "MLS", "NFL", "Six Nations", "Rugby World Cup", "ICC Cricket World Cup", "100 Cricket"];
+const broadcasters = ["Sky Sports", "BBC Sport", "ITV Sport", "TNT Sports", "CBS", "FOX Sports", "ESPN", "SuperSport", "Star Sports", "Nine Network"];
+const competitions = ["Premier League", "UEFA Champions League", "FIFA World Cup", "ICC Cricket World Cup", "Six Nations", "Rugby World Cup", "IPL", "Asia Cup", "WTA Tour"];
+const organisations = ["FIFA", "UEFA", "ICC", "World Rugby", "The FA", "ECB", "BCCI", "AFC", "ITF", "ATP", "Cricket Australia"];
 
 export default function HomePage() {
   return (
@@ -79,14 +80,21 @@ export default function HomePage() {
       <section className="mt-8 panel p-6 md:p-7">
         <p className="eyebrow text-amber-200/80">Selected broadcast and sports delivery context</p>
         <div className="mt-4 flex flex-wrap gap-2">
-          {clientStrip.map((client, index) => (
+          {broadcasters.map((client, index) => (
             <span key={client} className={`chip ${index % 2 === 0 ? "border-blue-400/20 text-blue-100" : "border-amber-300/20 text-amber-100"}`}>
               {client}
             </span>
           ))}		  
         </div>
 		<div className="mt-4 flex flex-wrap gap-2">
-          {clientStrip2.map((client, index) => (
+          {competitions.map((client, index) => (
+            <span key={client} className={`chip ${index % 2 === 0 ? "border-blue-400/20 text-blue-100" : "border-amber-300/20 text-amber-100"}`}>
+              {client}
+            </span>
+          ))}		
+		</div>
+		<div className="mt-4 flex flex-wrap gap-2">
+          {organisations.map((client, index) => (
             <span key={client} className={`chip ${index % 2 === 0 ? "border-blue-400/20 text-blue-100" : "border-amber-300/20 text-amber-100"}`}>
               {client}
             </span>
