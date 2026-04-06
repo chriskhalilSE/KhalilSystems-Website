@@ -5,7 +5,7 @@ import Navbar from "@/components/navbar";
 
 export const metadata: Metadata = {
   title: "Khalil Systems Engineering Ltd",
-  description: "High-reliability software, automation, and broadcast graphics systems.",
+  description: "Production-critical software for real-time systems, low-latency data pipelines, and high-reliability engineering delivery.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -32,14 +32,16 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
               <div>
                 <div className="font-medium text-white/[0.85]">Khalil Systems Engineering Ltd</div>
-                <div className="mt-1">Software engineering, automation, and systems delivery.</div>
+                <div className="mt-1">Production-critical software, real-time systems, and reliable delivery.</div>
               </div>
               <div className="flex flex-wrap gap-4">
                 <a className="transition hover:text-amber-300" href="mailto:chris@khalilsystems.co.uk">
                   chris@khalilsystems.co.uk
                 </a>
                 <Link href="/services" className="transition hover:text-amber-300">Services</Link>
-                <Link href="/work" className="transition hover:text-amber-300">Work</Link>
+                <Link href="/systems" className="transition hover:text-amber-300">Systems</Link>
+                <a className="transition hover:text-amber-300" href="https://github.com/chriskhalilSE" target="_blank" rel="noreferrer">GitHub</a>
+                <Link href="/Christopher_Khalil_CV.docx" className="transition hover:text-amber-300">Download CV</Link>
                 <Link href="/contact" className="transition hover:text-amber-300">Contact</Link>
               </div>
             </div>

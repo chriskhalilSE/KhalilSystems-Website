@@ -2,13 +2,13 @@ import PageHeader from "@/components/page-header";
 
 const services = [
   {
-    title: "Broadcast graphics systems",
-    desc: "Tooling and workflow support for live production environments where timing, clarity, and recovery paths matter.",
+    title: "Real-time systems engineering",
+    desc: "Design and delivery for low-latency, production-critical systems where timing, correctness, and operational clarity all matter.",
     tone: "panel-blue",
   },
   {
-    title: "Automation and workflow engineering",
-    desc: "Reduce repetitive manual work, cut operator error, and remove avoidable friction from operational processes.",
+    title: "Data pipelines and integration",
+    desc: "Ingest, transform, validate, and deliver fast-moving data without introducing chaos downstream.",
     tone: "",
   },
   {
@@ -17,35 +17,35 @@ const services = [
     tone: "panel-amber",
   },
   {
-    title: "Real-time data integration",
-    desc: "Ingest, transform, validate, and deliver fast-moving data without introducing chaos downstream.",
+    title: "APIs and backend services",
+    desc: "C# and .NET service work focused on resilience, maintainability, and boundaries that make sense.",
     tone: "panel-blue",
   },
   {
-    title: "APIs and backend services",
-    desc: "C# and .NET service work focused on resilience, maintainability, and boundaries that make sense.",
+    title: "Automation and workflow engineering",
+    desc: "Reduce repetitive manual work, cut operator error, and remove avoidable friction from operational processes.",
     tone: "",
   },
   {
     title: "Operational hardening",
-    desc: "Logging, observability, runbooks, and guardrails so systems fail more gracefully when reality inevitably does reality things.",
+    desc: "Validation, observability, runbooks, and guardrails so systems fail more gracefully when reality does reality things.",
     tone: "panel-amber",
   },
 ];
 
 const process = [
-  ["Discovery", "Clarify the real goal, constraints, failure modes, and success criteria before writing a pile of optimistic code."],
-  ["Delivery", "Build in increments, validate early, and keep changes understandable so the project stays steerable."],
-  ["Hardening", "Add observability, operational polish, and sensible fallbacks so the result holds up beyond the demo."],
+  ["Discovery", "Clarify the real goal, constraints, failure modes, and success criteria before writing optimistic code."],
+  ["Delivery", "Build in increments, validate early, and keep changes understandable so the work stays steerable."],
+  ["Hardening", "Add operational polish, sensible fallbacks, and visibility so the result holds up beyond the demo."],
 ];
 
 export default function ServicesPage() {
   return (
     <main className="page-shell">
       <PageHeader
-        eyebrow="Clear offerings, outcome led"
-        title="Services with reliability built in"
-        intro="The service mix is designed around practical delivery: build what matters, reduce risk, and make software easier to operate when deadlines and edge cases start doing their usual little dance."
+        eyebrow="Services"
+        title="Delivery focused services for production-critical systems"
+        intro="The service mix is designed around practical engineering: build what matters, reduce risk, and make software easier to operate when deadlines, integrations, and edge cases start misbehaving."
       />
 
       <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">

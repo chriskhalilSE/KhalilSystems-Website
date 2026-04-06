@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 const navItems = [
   { href: "/services", label: "Services" },
-  { href: "/work", label: "Work" },
+  { href: "/systems", label: "Systems" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
@@ -46,6 +46,9 @@ export default function Navbar() {
             })}
           </nav>
 
+          <Link href="/Christopher_Khalil_CV.docx" className="hidden rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white transition hover:bg-white/10 lg:inline-flex">
+            Download CV
+          </Link>
           <Link href="/contact" className="rounded-full border border-amber-300/20 bg-amber-400 px-4 py-2 text-sm font-medium text-black transition hover:bg-amber-300 shadow-glowAmber">
             Get in touch
           </Link>
