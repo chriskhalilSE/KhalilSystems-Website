@@ -83,13 +83,15 @@ export default function HomePage() {
             <span key={client} className={`chip ${index % 2 === 0 ? "border-blue-400/20 text-blue-100" : "border-amber-300/20 text-amber-100"}`}>
               {client}
             </span>
-          ))}
+          ))}		  
+        </div>
+		<div className="mt-4 flex flex-wrap gap-2">
           {clientStrip2.map((client, index) => (
             <span key={client} className={`chip ${index % 2 === 0 ? "border-blue-400/20 text-blue-100" : "border-amber-300/20 text-amber-100"}`}>
               {client}
             </span>
-          ))}		  
-        </div>
+          ))}		
+		</div>
       </section>
 
       <section className="mt-14 grid gap-4 md:grid-cols-3">
